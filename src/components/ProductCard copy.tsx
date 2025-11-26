@@ -51,7 +51,6 @@ export const ProductCard = ({ product, onAddToEnquiry }: ProductCardProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Image */}
       <div className="relative h-52 sm:h-56 md:h-60 overflow-hidden">
         <img
           src={product.image}
@@ -63,45 +62,36 @@ export const ProductCard = ({ product, onAddToEnquiry }: ProductCardProps) => {
         />
       </div>
 
-      {/* Content */}
       <div className="p-5 sm:p-6 flex flex-col flex-1">
         <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2">
           {product.name}
         </h3>
-        <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3">
+        <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4">
           {product.description}
         </p>
 
-        {/* Key Features: ⌄  (no bg, hover color change) */}
-        <div className="mb-2">
+        {/* Key Features dropdown */}
+        <div className="mb-4 border border-border/60 rounded-xl bg-background/70">
           <button
             type="button"
             onClick={() => setFeaturesOpen((prev) => !prev)}
             className="
               w-full flex items-center justify-between
-              text-left group
+              px-3 sm:px-4 py-2 sm:py-3
             "
           >
-            <span
-              className="
-                font-semibold text-foreground text-sm sm:text-base
-                transition-colors duration-200
-                group-hover:text-[#DA2576]
-              "
-            >
-              Key Features:
+            <span className="font-semibold text-foreground text-sm sm:text-base">
+              Key Features
             </span>
             <ChevronDown
-              className={`
-                h-4 w-4 transition-transform duration-200
-                group-hover:text-[#DA2576]
-                ${featuresOpen ? "rotate-180" : ""}
-              `}
+              className={`h-4 w-4 transition-transform duration-200 ${
+                featuresOpen ? "rotate-180" : ""
+              }`}
             />
           </button>
 
           {featuresOpen && (
-            <div className="mt-1">
+            <div className="px-3 sm:px-4 pb-3 sm:pb-4">
               <ul className="space-y-1">
                 {product.features.map((feature, index) => (
                   <li
@@ -117,10 +107,9 @@ export const ProductCard = ({ product, onAddToEnquiry }: ProductCardProps) => {
           )}
         </div>
 
-        {/* (Optional) Ideal For chips – still commented out */}
-        {/*
-        <div className="mb-3">
-          <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">
+        {/* Ideal For chips */}
+        {/* <div className="mb-4">
+          <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">
             Ideal For:
           </h4>
           <div className="flex flex-wrap gap-2">
@@ -136,12 +125,12 @@ export const ProductCard = ({ product, onAddToEnquiry }: ProductCardProps) => {
               </span>
             ))}
           </div>
-        </div>
-        */}
+        </div> */}
 
-        {/* Controls (right under Key Features now) */}
-        <div className="space-y-3 mt-2">
-          {/* Variant select */}
+        {/* Push controls to bottom */}
+        <div className="flex-1" />
+
+        <div className="space-y-3">
           <Select value={selectedVariant} onValueChange={setSelectedVariant}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="Select pack size" />
@@ -155,7 +144,6 @@ export const ProductCard = ({ product, onAddToEnquiry }: ProductCardProps) => {
             </SelectContent>
           </Select>
 
-          {/* Quantity controls */}
           <div className="flex items-center gap-2">
             <Button
               variant="outline"
@@ -180,7 +168,6 @@ export const ProductCard = ({ product, onAddToEnquiry }: ProductCardProps) => {
             </Button>
           </div>
 
-          {/* CTA */}
           <Button
             onClick={handleAddToEnquiry}
             className="w-full"

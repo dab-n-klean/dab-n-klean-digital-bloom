@@ -71,7 +71,7 @@ export const Hero = () => {
         <div
           className="
             relative w-full
-            h-[460px] sm:h-[520px] md:h-[700px] lg:h-[730px]
+            h-[460px] sm:h-[520px] md:h-[700px] lg:h-[740px]
           "
         >
           <div
@@ -88,30 +88,30 @@ export const Hero = () => {
         className="
           relative w-full
           -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-64
-          bg-[#FFE7E8]/30 
+         
           
           
         "
       >
         {/* Inner content container (centers text/cards) */}
-        <div className="container mx-auto px-4 pb-16 pt-8 md:pt-10">
+        <div className="container mx-auto px-4 pb-6 pt-8 md:pt-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1
               ref={headlineRef}
-              className="text-3xl md:text-5xl font-bold text-foreground mb-6"
+              className="text-3xl md:text-[43px] font-bold text-foreground mb-7"
             >
-              DAB&apos;N&apos;KLEAN — Softness You Feel.{" "}
+              DAB&apos;N&apos;KLEAN — Softness You Feel.{" "} <br />
               <span className="text-primary">Hygiene You Trust.</span>
             </h1>
 
-            <p
+            {/* <p
               ref={subheadRef}
               className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
               Premium tissue and hygiene products for every need. From kitchens
               to bathrooms, offices to restaurants — experience the perfect
               blend of comfort and cleanliness.
-            </p>
+            </p> */}
 
             <div
               ref={ctaRef}
@@ -136,7 +136,7 @@ export const Hero = () => {
 
             <div
               ref={cardsRef}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-5"
             >
               <div className="value-card glass-card rounded-lg p-6 hover:scale-105 transition-transform">
                 <Sparkles className="h-10 w-10 text-primary mx-auto mb-3" />

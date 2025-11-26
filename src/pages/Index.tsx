@@ -87,9 +87,9 @@ const Index = () => {
         onRemoveItem={handleRemoveItem}
         onClearCart={handleClearCart}
       />
-      
+       <Footer />
       <TissueBoxAnimation />
-      <Footer />
+     
     </div>
   );
 };
