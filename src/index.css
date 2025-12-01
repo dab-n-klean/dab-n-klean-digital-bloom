@@ -16,62 +16,64 @@
 
 @layer base {
   :root {
-    /* GLACIER THEME - Cool icy blues */
-    --background: 200 60% 98%;          /* very light ice blue */
-    --foreground: 210 50% 15%;          /* deep glacier blue for text */
+    /* DAB'N'KLEAN BRAND THEME */
+    /* Primary Navy: #28254F, Golden Yellow: #F6DF69 */
+    --background: 240 30% 98%;          /* soft cream white */
+    --foreground: 244 36% 23%;          /* brand navy for text */
 
-    --card: 200 40% 99%;                /* near white with blue tint */
-    --card-foreground: 210 50% 15%;
+    --card: 240 25% 99%;                /* soft white with warm tint */
+    --card-foreground: 244 36% 23%;
 
-    --popover: 200 40% 97%;
-    --popover-foreground: 210 50% 15%;
+    --popover: 240 25% 98%;
+    --popover-foreground: 244 36% 23%;
 
-    /* PRIMARY - Deep glacier blue */
-    --primary: 200 80% 40%;             /* rich glacier blue */
-    --primary-foreground: 200 60% 98%;  /* light ice */
+    /* PRIMARY - Brand Navy #28254F */
+    --primary: 244 36% 23%;             /* brand navy */
+    --primary-foreground: 50 89% 69%;   /* golden yellow #F6DF69 */
 
-    /* SECONDARY - Muted glacier */
-    --secondary: 200 30% 70%;           /* soft glacier grey-blue */
-    --secondary-foreground: 210 50% 15%;
+    /* SECONDARY - Soft pastel blue */
+    --secondary: 210 60% 92%;           /* soft sky blue pastel */
+    --secondary-foreground: 244 36% 23%;
 
-    --muted: 200 30% 90%;               /* very light glacier tint */
-    --muted-foreground: 210 30% 40%;
+    --muted: 240 20% 94%;               /* very light lavender */
+    --muted-foreground: 244 25% 45%;
 
-    --accent: 185 60% 85%;              /* aqua ice accent */
-    --accent-foreground: 210 50% 15%;
+    /* ACCENT - Golden Yellow #F6DF69 */
+    --accent: 50 89% 69%;               /* brand golden yellow */
+    --accent-foreground: 244 36% 23%;   /* navy text on yellow */
 
     /* STATUS */
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
     /* BORDERS / INPUTS / FOCUS */
-    --border: 200 30% 85%;
-    --input: 200 30% 85%;
-    --ring: 200 80% 40%;
+    --border: 240 20% 88%;
+    --input: 240 20% 88%;
+    --ring: 244 36% 23%;
 
     --radius: 1rem;
 
     /* SIDEBAR / NAV */
-    --sidebar-background: 200 60% 98%;
-    --sidebar-foreground: 210 50% 15%;
+    --sidebar-background: 244 36% 23%;  /* navy sidebar */
+    --sidebar-foreground: 50 89% 69%;   /* golden text */
 
-    --sidebar-primary: 200 80% 40%;
-    --sidebar-primary-foreground: 200 60% 98%;
+    --sidebar-primary: 50 89% 69%;
+    --sidebar-primary-foreground: 244 36% 23%;
 
-    --sidebar-accent: 185 60% 85%;
-    --sidebar-accent-foreground: 210 50% 15%;
+    --sidebar-accent: 244 30% 35%;
+    --sidebar-accent-foreground: 50 89% 69%;
 
-    --sidebar-border: 200 30% 85%;
-    --sidebar-ring: 200 80% 40%;
+    --sidebar-border: 244 30% 30%;
+    --sidebar-ring: 50 89% 69%;
 
-    /* CHARTS – glacier blue family */
-    --chart-1: 200 80% 40%;
-    --chart-2: 185 60% 50%;
-    --chart-3: 195 70% 60%;
-    --chart-4: 200 50% 70%;
-    --chart-5: 210 50% 15%;
+    /* CHARTS – brand color family */
+    --chart-1: 244 36% 23%;             /* navy */
+    --chart-2: 50 89% 69%;              /* golden yellow */
+    --chart-3: 210 60% 60%;             /* soft blue */
+    --chart-4: 170 50% 60%;             /* soft teal */
+    --chart-5: 280 40% 65%;             /* soft lavender */
 
-    --sidebar: 200 40% 99%;
+    --sidebar: 244 36% 23%;
 
     --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 
@@ -93,54 +95,54 @@
   }
 
   .dark {
-    /* DARK MODE – deep glacier */
-    --background: 210 50% 8%;
-    --foreground: 200 60% 95%;
+    /* DARK MODE – Brand Navy */
+    --background: 244 36% 12%;          /* deep navy background */
+    --foreground: 50 60% 92%;           /* soft cream text */
 
-    --card: 210 40% 12%;
-    --card-foreground: 200 60% 95%;
+    --card: 244 32% 16%;
+    --card-foreground: 50 60% 92%;
 
-    --popover: 210 40% 15%;
-    --popover-foreground: 200 60% 95%;
+    --popover: 244 32% 18%;
+    --popover-foreground: 50 60% 92%;
 
-    --primary: 195 80% 55%;
-    --primary-foreground: 210 50% 8%;
+    --primary: 50 89% 69%;              /* golden yellow primary in dark */
+    --primary-foreground: 244 36% 15%;  /* dark navy on yellow */
 
-    --secondary: 200 30% 30%;
-    --secondary-foreground: 200 60% 95%;
+    --secondary: 244 30% 25%;
+    --secondary-foreground: 50 60% 92%;
 
-    --muted: 210 30% 25%;
-    --muted-foreground: 200 40% 70%;
+    --muted: 244 25% 22%;
+    --muted-foreground: 240 20% 65%;
 
-    --accent: 185 60% 30%;
-    --accent-foreground: 185 60% 85%;
+    --accent: 50 70% 55%;               /* muted golden */
+    --accent-foreground: 244 36% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 85% 97%;
 
-    --border: 210 30% 25%;
-    --input: 210 30% 25%;
-    --ring: 195 80% 55%;
+    --border: 244 25% 25%;
+    --input: 244 25% 25%;
+    --ring: 50 89% 69%;
 
-    --sidebar-background: 210 50% 8%;
-    --sidebar-foreground: 200 60% 95%;
+    --sidebar-background: 244 36% 12%;
+    --sidebar-foreground: 50 89% 69%;
 
-    --sidebar-primary: 195 80% 55%;
-    --sidebar-primary-foreground: 210 50% 8%;
+    --sidebar-primary: 50 89% 69%;
+    --sidebar-primary-foreground: 244 36% 15%;
 
-    --sidebar-accent: 185 60% 30%;
-    --sidebar-accent-foreground: 185 60% 85%;
+    --sidebar-accent: 244 30% 25%;
+    --sidebar-accent-foreground: 50 89% 69%;
 
-    --sidebar-border: 210 30% 25%;
-    --sidebar-ring: 195 80% 55%;
+    --sidebar-border: 244 25% 22%;
+    --sidebar-ring: 50 89% 69%;
 
-    --chart-1: 195 80% 55%;
-    --chart-2: 185 60% 50%;
-    --chart-3: 200 70% 60%;
-    --chart-4: 190 60% 70%;
-    --chart-5: 200 40% 40%;
+    --chart-1: 50 89% 69%;              /* golden */
+    --chart-2: 244 36% 45%;             /* lighter navy */
+    --chart-3: 210 60% 60%;             /* soft blue */
+    --chart-4: 170 50% 60%;             /* soft teal */
+    --chart-5: 280 40% 65%;             /* soft lavender */
 
-    --sidebar: 210 40% 12%;
+    --sidebar: 244 32% 16%;
 
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
