@@ -17,61 +17,61 @@
 @layer base {
   :root {
     /* DAB'N'KLEAN BRAND THEME */
-    /* Primary Navy: #28254F, Blue accents: #0177D1, #00A7DE */
-    --background: 200 40% 98%;          /* soft sky white */
+    /* Primary Navy: #28254F, Soft Pastel Sky Blues */
+    --background: 200 50% 98%;          /* very soft sky white */
     --foreground: 244 36% 23%;          /* brand navy for text */
 
-    --card: 200 35% 99%;                /* soft white with cool tint */
+    --card: 200 40% 97%;                /* soft pastel sky card */
     --card-foreground: 244 36% 23%;
 
-    --popover: 200 35% 98%;
+    --popover: 200 45% 97%;
     --popover-foreground: 244 36% 23%;
 
     /* PRIMARY - Brand Navy #28254F */
     --primary: 244 36% 23%;             /* brand navy */
     --primary-foreground: 50 89% 69%;   /* golden yellow for button text only */
 
-    /* SECONDARY - Sky Blue #00A7DE */
-    --secondary: 194 100% 44%;          /* #00A7DE */
-    --secondary-foreground: 0 0% 100%;  /* white text */
+    /* SECONDARY - Soft Pastel Sky Blue */
+    --secondary: 200 55% 92%;           /* soft pastel sky blue */
+    --secondary-foreground: 244 36% 23%;
 
-    --muted: 200 30% 94%;               /* very light sky blue */
-    --muted-foreground: 244 25% 45%;
+    --muted: 200 40% 95%;               /* very soft sky muted */
+    --muted-foreground: 244 20% 50%;
 
-    /* ACCENT - Blue #0177D1 */
-    --accent: 204 98% 41%;              /* #0177D1 */
-    --accent-foreground: 0 0% 100%;     /* white text on blue */
+    /* ACCENT - Soft Pastel Blue */
+    --accent: 200 50% 88%;              /* soft pastel accent */
+    --accent-foreground: 244 36% 23%;
 
     /* STATUS */
-    --destructive: 0 72% 50%;
-    --destructive-foreground: 0 85% 97%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
 
     /* BORDERS / INPUTS / FOCUS */
-    --border: 200 30% 85%;
-    --input: 200 30% 88%;
-    --ring: 204 98% 41%;                /* blue ring */
+    --border: 200 35% 88%;
+    --input: 200 40% 92%;
+    --ring: 200 60% 70%;                /* soft blue ring */
 
     --radius: 1rem;
 
     /* SIDEBAR / NAV - Navy */
     --sidebar-background: 244 36% 23%;  /* navy sidebar */
-    --sidebar-foreground: 200 80% 90%;  /* light sky blue text */
+    --sidebar-foreground: 200 60% 92%;  /* soft pastel text */
 
-    --sidebar-primary: 194 100% 44%;    /* #00A7DE */
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary: 200 55% 85%;     /* soft pastel */
+    --sidebar-primary-foreground: 244 36% 23%;
 
-    --sidebar-accent: 204 98% 41%;      /* #0177D1 */
-    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-accent: 200 50% 80%;
+    --sidebar-accent-foreground: 244 36% 23%;
 
     --sidebar-border: 244 30% 30%;
-    --sidebar-ring: 194 100% 44%;
+    --sidebar-ring: 200 55% 85%;
 
-    /* CHARTS – blue color family */
+    /* CHARTS – soft pastel blue family */
     --chart-1: 244 36% 23%;             /* navy */
-    --chart-2: 204 98% 41%;             /* #0177D1 */
-    --chart-3: 194 100% 44%;            /* #00A7DE */
-    --chart-4: 197 80% 70%;             /* light sky blue */
-    --chart-5: 200 60% 85%;             /* pastel sky */
+    --chart-2: 200 55% 75%;             /* soft pastel blue */
+    --chart-3: 195 50% 80%;             /* lighter pastel */
+    --chart-4: 200 45% 85%;             /* very soft pastel */
+    --chart-5: 205 40% 90%;             /* almost white pastel */
 
     --sidebar: 244 36% 23%;
 
@@ -95,52 +95,52 @@
   }
 
   .dark {
-    /* DARK MODE – Brand Navy with Blue accents */
+    /* DARK MODE – Navy with Soft Pastel accents */
     --background: 244 36% 10%;          /* deep navy background */
-    --foreground: 200 50% 95%;          /* light sky text */
+    --foreground: 200 40% 95%;          /* soft sky text */
 
     --card: 244 32% 14%;
-    --card-foreground: 200 50% 95%;
+    --card-foreground: 200 40% 95%;
 
     --popover: 244 32% 16%;
-    --popover-foreground: 200 50% 95%;
+    --popover-foreground: 200 40% 95%;
 
-    --primary: 194 100% 44%;            /* #00A7DE primary in dark */
-    --primary-foreground: 244 36% 15%;  /* dark navy on blue */
+    --primary: 200 50% 75%;             /* soft pastel blue primary in dark */
+    --primary-foreground: 244 36% 15%;  /* dark navy on pastel */
 
-    --secondary: 204 98% 41%;           /* #0177D1 */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 200 40% 25%;           /* muted pastel dark */
+    --secondary-foreground: 200 50% 90%;
 
-    --muted: 244 25% 20%;
+    --muted: 244 25% 18%;
     --muted-foreground: 200 30% 65%;
 
-    --accent: 197 80% 60%;              /* lighter sky blue */
-    --accent-foreground: 244 36% 15%;
+    --accent: 200 45% 35%;              /* soft muted accent */
+    --accent-foreground: 200 50% 95%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 85% 97%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 244 25% 22%;
     --input: 244 25% 22%;
-    --ring: 194 100% 44%;
+    --ring: 200 50% 70%;
 
     --sidebar-background: 244 36% 10%;
-    --sidebar-foreground: 194 100% 70%;
+    --sidebar-foreground: 200 50% 85%;
 
-    --sidebar-primary: 194 100% 44%;
+    --sidebar-primary: 200 50% 75%;
     --sidebar-primary-foreground: 244 36% 15%;
 
-    --sidebar-accent: 204 98% 50%;
-    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-accent: 200 45% 30%;
+    --sidebar-accent-foreground: 200 50% 90%;
 
     --sidebar-border: 244 25% 18%;
-    --sidebar-ring: 194 100% 44%;
+    --sidebar-ring: 200 50% 70%;
 
-    --chart-1: 194 100% 44%;            /* #00A7DE */
-    --chart-2: 204 98% 41%;             /* #0177D1 */
-    --chart-3: 197 80% 60%;             /* light sky */
-    --chart-4: 200 60% 70%;             /* pastel sky */
-    --chart-5: 244 36% 40%;             /* lighter navy */
+    --chart-1: 200 50% 75%;             /* soft pastel */
+    --chart-2: 200 45% 60%;             /* medium pastel */
+    --chart-3: 195 40% 70%;             /* light teal pastel */
+    --chart-4: 205 35% 80%;             /* very soft */
+    --chart-5: 244 30% 40%;             /* muted navy */
 
     --sidebar: 244 32% 14%;
 
