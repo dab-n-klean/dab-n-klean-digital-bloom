@@ -16,85 +16,76 @@
 
 @layer base {
   :root {
-    /* MAIN SURFACES (very light + white) */
-    --background: 198 100% 98%;          /* page bg: very light blue (#f5fcff) */
-    --foreground: 244 36% 23%;           /* logo navy for text */
+    /* GLACIER THEME - Cool icy blues */
+    --background: 200 60% 98%;          /* very light ice blue */
+    --foreground: 210 50% 15%;          /* deep glacier blue for text */
 
-    --card: 0 0% 100%;                   /* cards/panels: pure white */
-    --card-foreground: 244 36% 23%;
+    --card: 200 40% 99%;                /* near white with blue tint */
+    --card-foreground: 210 50% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 244 36% 23%;
+    --popover: 200 40% 97%;
+    --popover-foreground: 210 50% 15%;
 
-    /* PRIMARY (buttons, key headings) */
-    --primary: 244 36% 23%;              /* logo navy */
-    --primary-foreground: 48 84% 61%;    /* logo yellow */
+    /* PRIMARY - Deep glacier blue */
+    --primary: 200 80% 40%;             /* rich glacier blue */
+    --primary-foreground: 200 60% 98%;  /* light ice */
 
-    /* SOFT BLUES FOR ACCENTS (lighter than #8BD4E9) */
-    --secondary: 192 78% 84%;            /* #b7e9f6 – soft pastel blue */
-    --secondary-foreground: 244 36% 23%;
+    /* SECONDARY - Muted glacier */
+    --secondary: 200 30% 70%;           /* soft glacier grey-blue */
+    --secondary-foreground: 210 50% 15%;
 
-    --muted: 194 76% 92%;                /* #dbf3fa – very light blue tint */
-    --muted-foreground: 244 36% 23%;
+    --muted: 200 30% 90%;               /* very light glacier tint */
+    --muted-foreground: 210 30% 40%;
 
-    --accent: 194 76% 92%;               /* use same gentle tint for accents */
-    --accent-foreground: 244 36% 23%;
+    --accent: 185 60% 85%;              /* aqua ice accent */
+    --accent-foreground: 210 50% 15%;
 
     /* STATUS */
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
     /* BORDERS / INPUTS / FOCUS */
-    --border: 194 76% 92%;
-    --input: 194 76% 92%;
-    --ring: 244 36% 23%;                 /* navy outline */
+    --border: 200 30% 85%;
+    --input: 200 30% 85%;
+    --ring: 200 80% 40%;
 
-    --radius: 1.5rem;
+    --radius: 1rem;
 
     /* SIDEBAR / NAV */
-    --sidebar-background: 198 100% 98%;
-    --sidebar-foreground: 244 36% 23%;
+    --sidebar-background: 200 60% 98%;
+    --sidebar-foreground: 210 50% 15%;
 
-    --sidebar-primary: 244 36% 23%;
-    --sidebar-primary-foreground: 48 84% 61%;
+    --sidebar-primary: 200 80% 40%;
+    --sidebar-primary-foreground: 200 60% 98%;
 
-    --sidebar-accent: 194 76% 92%;
-    --sidebar-accent-foreground: 244 36% 23%;
+    --sidebar-accent: 185 60% 85%;
+    --sidebar-accent-foreground: 210 50% 15%;
 
-    --sidebar-border: 194 76% 92%;
-    --sidebar-ring: 244 36% 23%;
+    --sidebar-border: 200 30% 85%;
+    --sidebar-ring: 200 80% 40%;
 
-    /* CHARTS – still in your blue family */
-    --chart-1: 192 78% 84%;   /* #b7e9f6 */
-    --chart-2: 194 76% 92%;   /* #dbf3fa */
-    --chart-3: 198 100% 98%;  /* #f5fcff */
-    --chart-4: 193 80% 71%;   /* slightly stronger blue if needed */
-    --chart-5: 244 36% 23%;   /* navy for contrast */
+    /* CHARTS – glacier blue family */
+    --chart-1: 200 80% 40%;
+    --chart-2: 185 60% 50%;
+    --chart-3: 195 70% 60%;
+    --chart-4: 200 50% 70%;
+    --chart-5: 210 50% 15%;
 
-    --sidebar: 198 100% 98%;
+    --sidebar: 200 40% 99%;
 
-    --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system,
-      BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-      sans-serif;
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 
-    --font-serif: 'Merriweather', ui-serif, Georgia, Cambria,
-      'Times New Roman', Times, serif;
+    --font-serif: 'Merriweather', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 
-    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
-      Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 2px 4px -1px hsl(0 0% 0% / 0.1);
-    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 4px 6px -1px hsl(0 0% 0% / 0.1);
-    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
     --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
 
     --tracking-normal: 0em;
@@ -102,67 +93,62 @@
   }
 
   .dark {
-    /* DARK MODE – navy-based but softer */
-    --background: 244 36% 10%;
-    --foreground: 0 0% 98%;
+    /* DARK MODE – deep glacier */
+    --background: 210 50% 8%;
+    --foreground: 200 60% 95%;
 
-    --card: 244 36% 16%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 40% 12%;
+    --card-foreground: 200 60% 95%;
 
-    --popover: 244 36% 18%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 40% 15%;
+    --popover-foreground: 200 60% 95%;
 
-    --primary: 244 36% 23%;
-    --primary-foreground: 48 84% 61%;
+    --primary: 195 80% 55%;
+    --primary-foreground: 210 50% 8%;
 
-    --secondary: 192 78% 70%;
-    --secondary-foreground: 244 36% 15%;
+    --secondary: 200 30% 30%;
+    --secondary-foreground: 200 60% 95%;
 
-    --muted: 244 20% 25%;
-    --muted-foreground: 0 0% 90%;
+    --muted: 210 30% 25%;
+    --muted-foreground: 200 40% 70%;
 
-    --accent: 192 78% 60%;
-    --accent-foreground: 244 36% 15%;
+    --accent: 185 60% 30%;
+    --accent-foreground: 185 60% 85%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 85% 97%;
 
-    --border: 244 25% 30%;
-    --input: 244 25% 30%;
-    --ring: 48 84% 61%;
+    --border: 210 30% 25%;
+    --input: 210 30% 25%;
+    --ring: 195 80% 55%;
 
-    --sidebar-background: 244 36% 10%;
-    --sidebar-foreground: 0 0% 98%;
+    --sidebar-background: 210 50% 8%;
+    --sidebar-foreground: 200 60% 95%;
 
-    --sidebar-primary: 244 36% 23%;
-    --sidebar-primary-foreground: 48 84% 61%;
+    --sidebar-primary: 195 80% 55%;
+    --sidebar-primary-foreground: 210 50% 8%;
 
-    --sidebar-accent: 244 25% 30%;
-    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-accent: 185 60% 30%;
+    --sidebar-accent-foreground: 185 60% 85%;
 
-    --sidebar-border: 244 25% 30%;
-    --sidebar-ring: 48 84% 61%;
+    --sidebar-border: 210 30% 25%;
+    --sidebar-ring: 195 80% 55%;
 
-    --chart-1: 192 78% 70%;
-    --chart-2: 192 78% 60%;
-    --chart-3: 194 76% 72%;
-    --chart-4: 198 100% 88%;
-    --chart-5: 48 84% 61%;
+    --chart-1: 195 80% 55%;
+    --chart-2: 185 60% 50%;
+    --chart-3: 200 70% 60%;
+    --chart-4: 190 60% 70%;
+    --chart-5: 200 40% 40%;
 
-    --sidebar: 244 36% 12%;
+    --sidebar: 210 40% 12%;
 
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 2px 4px -1px hsl(0 0% 0% / 0.1);
-    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 4px 6px -1px hsl(0 0% 0% / 0.1);
-    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1),
-      0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
     --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   }
 }
