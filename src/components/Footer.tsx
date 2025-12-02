@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,6 +17,11 @@ export const Footer = () => {
     });
   }, []);
 
+  // ✅ Scroll to top for all internal footer links
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground ">
       {/* Top section */}
@@ -28,12 +34,13 @@ export const Footer = () => {
           <div className="space-y-4" data-aos="fade-up" data-aos-delay="50">
             {/* Logo + brand text */}
             <div className="flex items-center gap-3">
-              <img
-                src={dnkLogo}
-                alt="DAB'N'KLEAN Logo"
-                className="h-10 w-auto object-contain"
-              />
-              
+              <Link to="/" onClick={handleNavClick}>
+                <img
+                  src={dnkLogo}
+                  alt="DAB'N'KLEAN Logo"
+                  className="h-10 w-auto object-contain"
+                />
+              </Link>
             </div>
 
             <p className="text-sm text-white/90 max-w-xs">
@@ -77,36 +84,49 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  to="/"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
+                <Link
+                  to="/about"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/b2b-partner"
+                  onClick={handleNavClick}
+                  className="transition-colors hover:text-[#FFF2F3]"
+                >
+                  B2B &amp; Partners
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,60 +138,67 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Facial Tissues
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Toilet Roll – 2 Ply
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Toilet Roll – 3 Ply
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Kitchen Towel
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Non-Woven Tissue
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Napkins
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
+                <Link
+                  to="/products"
+                  onClick={handleNavClick}
                   className="transition-colors hover:text-[#FFF2F3]"
                 >
                   Paper Cups
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -225,11 +252,11 @@ export const Footer = () => {
               <div>
                 <p className="font-semibold text-white/95">Address</p>
                 <p className="text-white/90 leading-relaxed">
-                 7-3-72/1, Old Kurnool Rd, 
-                      <br />
-                       Telangana NGOS Colony, Katedhan,
-                      <br />
-                      Hyderabad, Telangana 500077
+                  7-3-72/1, Old Kurnool Rd,
+                  <br />
+                  Telangana NGOS Colony, Katedhan,
+                  <br />
+                  Hyderabad, Telangana 500077
                 </p>
               </div>
             </div>

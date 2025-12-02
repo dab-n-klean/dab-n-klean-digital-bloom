@@ -19,12 +19,18 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
     }
   };
 
+  // ✅ Scroll to top for both desktop & mobile links
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md shadow-md">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo -> Home */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={handleNavClick}>
             <img
               src="/images/DNK-logo-new.png"
               alt="DAB'N'KLEAN logo"
@@ -36,6 +42,7 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
           <div className="hidden md:flex items-center gap-6">
             <Link
               to="/"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               Home
@@ -43,13 +50,15 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
 
             <Link
               to="/about"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               About
             </Link>
 
-             <Link
+            <Link
               to="/products"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               Products
@@ -57,13 +66,15 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
 
             <Link
               to="/b2b-partner"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               B2B & Partners
             </Link>
-            
+
             <Link
               to="/contact"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               Contact
@@ -108,8 +119,9 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 flex flex-col gap-3">
-             <Link
+            <Link
               to="/"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               Home
@@ -117,13 +129,15 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
 
             <Link
               to="/about"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               About
             </Link>
 
-             <Link
+            <Link
               to="/products"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               Products
@@ -131,13 +145,15 @@ export const Navigation = ({ onCartOpen, cartItemCount }: NavigationProps) => {
 
             <Link
               to="/b2b-partner"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               B2B & Partners
             </Link>
-            
+
             <Link
               to="/contact"
+              onClick={handleNavClick}
               className="text-foreground hover:text-primary transition-colors text-sm font-medium"
             >
               Contact
