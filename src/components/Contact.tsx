@@ -45,7 +45,7 @@ export const Contact = () => {
 
     try {
       await submitForm({
-        formType: "Contact",
+        formType: "Home",
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
