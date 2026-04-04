@@ -17,10 +17,10 @@ const certifications = [
     name: "ISO 22001",
     logo: "/images/ISO 22001.png",
   },
-  {
-    name: "FSC Certified",
-    logo: "/images/FSC Logo.png",
-  },
+  // {
+  //   name: "FSC Certified",
+  //   logo: "/images/FSC Logo.png",
+  // },
   {
     name: "SMETA Certified",
     logo: "/images/smeta.jpeg",
