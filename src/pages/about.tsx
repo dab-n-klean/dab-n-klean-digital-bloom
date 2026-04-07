@@ -216,7 +216,7 @@ const AboutPage = () => {
                     step. From the raw materials we source, to the way we
                     manufacture and deliver our products, sustainability is at
                     the heart of everything we do. All of our raw materials are
-                    FSC-approved, ensuring that we are contributing to the
+                    approved, ensuring that we are contributing to the
                     preservation of forests while maintaining the highest
                     standards of quality. These materials are sourced from
                     trusted suppliers around the world, giving our products the
