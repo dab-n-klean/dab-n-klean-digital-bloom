@@ -258,7 +258,7 @@ export const Footer = () => {
       >
         <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs sm:text-sm text-white/80 text-center sm:text-left">
-            © 2025 All Rights Reserved
+            © 2026 All Rights Reserved
           </p>
           <p className="text-xs sm:text-sm text-white/80 text-center sm:text-right">
             Powered By{" "}
